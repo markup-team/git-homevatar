@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>홈바타</title>
+<script src="assets/js/webfont.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<!-- 211122 | slick 슬라이더 js 삭제 -->
+<!-- <script src="./assets/js/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="./assets/js/jquery.easydropdown.js" type="text/javascript" charset="utf-8"></script>
+<!-- 211122 | 슬라이더 js 추가 -->
+<script src="./assets/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+<script src="./assets/js/custom.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="wrapper">
+  <!-- ####홈바타 -->
+  <div class="homevatar">
+    <!-- ###상단 -->
+    <header class="top-box">
+      <!-- ##상단 로고 -->
+      <div class="top-logo">
+        <h1 class="logo-homevatar">
+          <img src="./assets/images/header/logo@2x.png" alt="홈바타" width="143" height="49">
+        </h1>
+      </div>
+      <!-- ##상단 이용안내 -->
+      <div class="top-tutorial">
+        <button class="ico i-top-tutorial">이용안내</button>
+      </div>
+      <!-- ##상단 닫기버튼 -->
+      <div class="top-close">
+        <button type="button">
+          <i class="ico i-top-close">닫기</i>
+        </button>
+      </div>
+    </header>
+    <!-- //###상단 -->
+
+    <!-- ###컨텐츠 -->
+    <main class="contents-box">
+      <!-- ##캐릭터 리스트 영역 -->
+      <section class="section-character-list">
+        <div class="section-character-list-wrap">
+          <!-- 캐릭터 개수 -->
+          <h2 class="character-txt">
+            <span>총</span><em class="t-highlight">5</em><span>캐릭터</span>
+          </h2>
+          <!-- //캐릭터 개수 -->
+
+          <!-- 슬라이더 -->
+          <div class="character-slider-inner">
+            <section class="character-slider swiper">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="add-area">
+                    <div class="add-area-wrap">
+                      <button class="btn-add">추가</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <!-- #꾸미기 영역: 꾸미기 -->
+                  <!-- js select : 선택시 활성화 / lead: 대표 배지 -->
+                  <div class="makeup-area select">
+                    <div class="makeup-area-wrap">
+                      <!-- 210913 depth1 ~ depth11  클래스명 추가 / 클래스명으로 사용하지 않고 개발단에서 z-index 추가 해도 됩니다. -->
+                      <!-- 이미지 순서:
+                      배경 > 몸통(피부톤) > 얼굴(표정) > 머리(헤어스타일) > 신발 > 하의 > 상의 > 한벌의상 > 악세사리 > 단짝 > 감정  -->
+                      <img src="./assets/images/item/wear/bg-1-1.png" alt="배경" width="350" height="380" class="img-makeup-item depth1">
+                      <img src="./assets/images/item/wear/character-skin-1-1.png" alt="몸통(피부색)" width="350" height="380" class="img-makeup-item depth2">
+                      <img src="./assets/images/item/wear/emotion-expression-1.png" alt="얼굴(표정)" width="350" height="380" class="img-makeup-item depth3">
+                      <img src="./assets/images/item/wear/character-hair-1.png" alt="머리(헤어스타일)" width="350" height="380" class="img-makeup-item depth4">
+                      <img src="./assets/images/item/wear/character-shoes-1.png" alt="신발" width="350" height="380" class="img-makeup-item depth5">
+                      <img src="./assets/images/item/wear/character-bottom-1.png" alt="하의" width="350" height="380" class="img-makeup-item depth6">
+                      <img src="./assets/images/item/wear/character-top-1.png" alt="상의" width="350" height="380" class="img-makeup-item depth7">
+                      <!-- <img src="./assets/images/item/wear/character-suite-1.png" alt="한벌의상" width="350" height="380" class="img-makeup-item depth8"> -->
+                      <img src="./assets/images/item/wear/character-accessory-1.png" alt="악세사리" width="350" height="380" class="img-makeup-item depth9">
+                      <!-- <img src="./assets/images/item/wear/chum-chum-1.png" alt="단짝" width="350" height="380" class="img-makeup-item depth10"> -->
+                      <!-- <img src="./assets/images/item/wear/bg-emotion-1.png" alt="감정" width="350" height="380" class="img-makeup-item depth11"> -->
+                    </div>
+                    <!-- 대표 배지 -->
+                    <div class="badge-makeup">
+                      <i class="ico i-lead">대표</i>
+                    </div>
+                    <!-- 체크 -->
+                    <div class="check-makeup">
+                      <i class="ico i-check">체크</i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <!-- #꾸미기 영역: 꾸미기 -->
+                  <!-- js select : 선택시 활성화 / lead: 대표 배지 -->
+                  <div class="makeup-area lead">
+                    <div class="makeup-area-wrap">
+
+                      <!-- 210913 depth1 ~ depth11  클래스명 추가 / 클래스명으로 사용하지 않고 개발단에서 z-index 추가 해도 됩니다. -->
+                      <!-- 이미지 순서:
+                      배경 > 몸통(피부톤) > 얼굴(표정) > 머리(헤어스타일) > 신발 > 하의 > 상의 > 한벌의상 > 악세사리 > 단짝 > 감정  -->
+                      <!-- 210913 아이템 디폴트 이미지 추가 -->
+                      <img src="./assets/images/item/wear/character-skin-default.png" alt="몸통(피부색)" width="350" height="380" class="img-makeup-item depth2">
+                      <img src="./assets/images/item/wear/emotion-expression-default.png" alt="얼굴(표정)" width="350" height="380" class="img-makeup-item depth3">
+                      <img src="./assets/images/item/wear/character-hair-default.png" alt="머리(헤어스타일)" width="350" height="380" class="img-makeup-item depth4">
+                      <img src="./assets/images/item/wear/character-bottom-default.png" alt="하의" width="350" height="380" class="img-makeup-item depth6">
+                      <img src="./assets/images/item/wear/character-top-default.png" alt="상의" width="350" height="380" class="img-makeup-item depth7">
+                    </div>
+
+                    <!-- 대표 배지 -->
+                    <div class="badge-makeup">
+                      <i class="ico i-lead">대표</i>
+                    </div>
+                    <!-- 체크 -->
+                    <div class="check-makeup">
+                      <i class="ico i-check">체크</i>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+          </div>
+          <!-- //슬라이더 -->
+
+          <!-- 버튼 -->
+          <div class="character-btn-inner">
+            <div class="character-btn">
+              <ul class="character-btn-list-grp">
+                <li class="character-btn-list list-lead">
+                  <button class="btn-set btn-set-lead">대표 캐릭터로 적용</button>
+                </li>
+                <li class="character-btn-list list-save">
+                  <button class="btn-set btn-set-save">갤러리에 저장</button>
+                </li>
+                <li class="character-btn-list list-edit">
+                  <button class="btn-set btn-set-edit">편집하기</button>
+                </li>
+                <li class="character-btn-list list-delete">
+                  <button class="btn-set btn-set-delete">삭제하기</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- //버튼 -->
+
+        </div>
+      </section>
+      <!-- //##캐릭터 리스트 영역 -->
+
+    </main>
+    <!-- //###컨텐츠 -->
+
+  </div>
+  <!-- //####홈바타 -->
+</div>
+</body>
+</html>

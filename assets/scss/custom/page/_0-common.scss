@@ -1,0 +1,83 @@
+// ========================================================================
+// [common] | 공통
+// ========================================================================
+@keyframes myAnimation {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes myAnimation1 {
+  from {
+    opacity: 0;
+    top: 0
+  }
+  to {
+    opacity: 1;
+    top: 76px
+  }
+}
+.homevatar{
+  position: relative;
+  width: 1280px;
+  height: 752px;
+  background-color: #fff;
+  .ico{
+    display: inline-block;
+    @extend %ir;
+    // 학습안내
+    &.i-top-tutorial{
+      @include bg-img-size(120px, 35px, $imgheaderPath, 'i-top-tutorial@2x');
+    }
+    // 닫기
+    &.i-top-close{
+      @include bg-img-size(31px, 30px, $imgheaderPath, 'i-top-close@2x');
+    }
+    // 꾸미기: 콘 아이콘
+    &.i-cone{
+      @include bg-img-size(36px/2, 36px/2, $imgmakeupPath, 'i-coin-2@2x');
+      vertical-align: top;
+    }
+    // 꾸미기: NEW
+    &.i-select-new{
+      @include bg-img-size(52px/2, 52px/2, $imgmakeupPath, 'i-select-new@2x');
+    }
+    // 꾸미기: 구매
+    &.i-select-badge{
+      @include bg-img-size(120px/2, 120px/2, $imgmakeupPath, 'i-select-purchase@2x');
+    }
+    // 리스트: 체크
+    &.i-check{
+      @include bg-img-size(170px/2, 170px/2, $imglistPath, 'i-check@2x');
+    }
+    // 리스트: 대표 배지
+    &.i-lead{
+      @include bg-img-size(142px/2, 142px/2, $imglistPath, 'i-lead@2x');
+    }
+
+  }
+  .unit-list-box{
+    .ico{
+      // 콘 아이콘
+      &.i-cone{
+        @include bg-img-size(46px/2, 46px/2, $imgmakeupPath, 'i-coin-1@2x');
+        vertical-align: top;
+      }
+    }
+  }
+  .icon{
+    display: inline-block;
+    @extend %ir;
+  }
+
+  // 스플래시
+  .homevatar-splash{
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}

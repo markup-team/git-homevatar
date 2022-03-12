@@ -1,0 +1,135 @@
+// ========================================================================
+// [popup] | 공통 팝업
+// ========================================================================
+button{ border: 0 none;  outline: 0 none; background-color: transparent}
+.share-pop-ui{
+  display: none;
+  @include top-left(0, 0);
+  width: 100%;
+  height: 100%;
+  .dim{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+  }
+  .pos-a{
+    @include top-left(0, 0);
+  }
+  .dp-table{
+    display: table;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .dp-cell{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &.open{
+    display: block;
+  }
+}
+//---------------------------------------------------------------------
+// 로딩중박스
+.share-loading-box{
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 30px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+//---------------------------------------------------------------------
+// 알림박스
+.share-alert-box{
+  display: inline-block;
+  width: 475px;
+  padding: 30px 0;
+  border-radius: 30px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #aaaaaa;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.4em;
+  .share-txt-area{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .share-txt{
+    padding: 10px;
+  }
+  .share-btn-area{
+    .button-ok{
+      width: 135px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 24px;
+      background-color: #13aeca;
+      color: #ffffff;
+    }
+  }
+}
+//---------------------------------------------------------------------
+// 확인박스
+.share-comfirm-box{
+  display: inline-block;
+  width: 475px;
+  padding: 30px 0;
+  border-radius: 30px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.4em;
+  .share-txt{
+    padding: 0 30px;
+    color: #454545;
+    .txt-sub{
+      margin-top: 25px;
+      line-height: 1.5em;
+      font-size: 20px;
+      font-weight: $base-normal;
+      color: #3f3f3f;
+      letter-spacing: -0.02em;
+    }
+  }
+  .dp-table{
+    min-height: 165px;
+  }
+
+  .share-btn-area{
+    ul{
+      margin: 20px 0 0 0;
+      font-size: 0;
+    }
+    .share-btn{
+      display: inline-block;
+      margin: 0 6px;
+      vertical-align: top;
+      button{
+        min-width: 140px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        border-radius: 24px;
+        background-color: #3eafcc;
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff
+      }
+      &.btn-x{
+        button{
+          background-color: #aeaeae;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>홈바타</title>
+<script src="assets/js/webfont.js"></script>
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<!-- 211122 | slick 슬라이더 js 삭제 -->
+<!-- <script src="./assets/js/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="./assets/js/jquery.easydropdown.js" type="text/javascript" charset="utf-8"></script>
+<!-- 211122 | 슬라이더 js 추가 -->
+<script src="./assets/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+<script src="./assets/js/custom.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<div class="wrapper">
+  <!-- ####홈바타 -->
+  <div class="homevatar">
+    <!-- ###상단 -->
+    <header class="top-box">
+      <!-- ##상단 로고 -->
+      <div class="top-logo">
+        <h1 class="logo-homevatar">
+          <img src="./assets/images/header/logo@2x.png" alt="홈바타" width="143" height="49">
+        </h1>
+      </div>
+      <!-- ##상단 이용안내 -->
+      <div class="top-tutorial">
+        <button class="ico i-top-tutorial">이용안내</button>
+      </div>
+      <!-- ##상단 닫기버튼 -->
+      <div class="top-close">
+        <button type="button">
+          <i class="ico i-top-close">닫기</i>
+        </button>
+      </div>
+    </header>
+    <!-- //###상단 -->
+
+
+    <!-- ###컨텐츠 -->
+    <main class="contents-box">
+      <!-- ##꾸미기 영역 -->
+      <section class="section-makeup">
+
+        <div class="section-makeup-wrap">
+          <h2 class="blind">꾸미기 영역</h2>
+          <!-- #꾸미기 영역: 콘 -->
+          <div class="cone-area">
+            <em class="ca-num">900,000콘</em>
+            <span class="ca-txt">사용가능!</span>
+          </div>
+          <!-- //#꾸미기 영역: 콘 -->
+
+          <!-- #꾸미기 영역: 꾸미기 -->
+          <div class="makeup-area">
+            <div class="makeup-area-wrap">
+              <!-- 210913 depth1 ~ depth11  클래스명 추가 / 클래스명으로 사용하지 않고 개발단에서 z-index 추가 해도 됩니다. -->
+              <!-- 이미지 순서:
+              배경 > 몸통(피부톤) > 얼굴(표정) > 머리(헤어스타일) > 신발 > 하의 > 상의 > 한벌의상 > 악세사리 > 단짝 > 감정  -->
+              <img src="./assets/images/item/wear/bg-1-1.png" alt="배경" width="350" height="380" class="img-makeup-item depth1">
+              <img src="./assets/images/item/wear/character-skin-1-1.png" alt="몸통(피부색)" width="350" height="380" class="img-makeup-item depth2">
+              <img src="./assets/images/item/wear/emotion-expression-1.png" alt="얼굴(표정)" width="350" height="380" class="img-makeup-item depth3">
+              <img src="./assets/images/item/wear/character-hair-1.png" alt="머리(헤어스타일)" width="350" height="380" class="img-makeup-item depth4">
+              <img src="./assets/images/item/wear/character-shoes-1.png" alt="신발" width="350" height="380" class="img-makeup-item depth5">
+              <img src="./assets/images/item/wear/character-bottom-1.png" alt="하의" width="350" height="380" class="img-makeup-item depth6">
+              <img src="./assets/images/item/wear/character-top-1.png" alt="상의" width="350" height="380" class="img-makeup-item depth7">
+              <!-- <img src="./assets/images/item/wear/character-suite-1.png" alt="한벌의상" width="350" height="380" class="img-makeup-item depth8"> -->
+              <img src="./assets/images/item/wear/character-accessory-1.png" alt="악세사리" width="350" height="380" class="img-makeup-item depth9">
+              <!-- <img src="./assets/images/item/wear/chum-chum-1.png" alt="단짝" width="350" height="380" class="img-makeup-item depth10"> -->
+              <!-- <img src="./assets/images/item/wear/bg-emotion-1.png" alt="감정" width="350" height="380" class="img-makeup-item depth11"> -->
+            </div>
+          </div>
+          <!-- //#꾸미기 영역: 꾸미기 -->
+
+          <!-- #꾸미기 영역: 구매한 아이템 -->
+          <div class="item-area">
+            <!-- 텍스트 -->
+            <div class="item-txt-inner">
+              <span class="item-txt txt-select-item">
+                <span>총</span><em class="t-highlight">5</em><span>아이템</span>
+              </span>
+              <span class="item-txt txt-select-cone">
+                <span>총</span><em class="t-highlight">3,300</em><span>콘</span>
+              </span>
+            </div>
+            <!-- 슬라이더 -->
+            <div class="item-slider-inner">
+              <!-- 211122 swiper 클래스 추가해주세요 -->
+              <section class="item-slider swiper">
+                <!-- 211122 swiper-wrapper 엘리먼트 추가해주세요 -->
+                <div class="swiper-wrapper">
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </div>
+                  <!-- 211122 각 슬라이드 아이템 마다 swiper-slide 추가해주세요 -->
+                  <div class="swiper-slide">
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="65" height="65" class="img-thumnail">
+                    </div>
+                    <button class="btn-item btn-delete">삭제 버튼</button>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+            </div>
+
+            <!-- 선택된 아이템 없음 -->
+            <div class="item-no-select-inner" style="display: none">
+              <span class="txt">선택된 아이템이 없어요.</span>
+            </div>
+          </div>
+          <!-- //#꾸미기 영역: 구매한 아이템 -->
+
+          <!-- #꾸미기 영역: 버튼  -->
+          <div class="btn-area">
+            <div class="btn-area-wrap">
+              <button class="btn-makeup btn-retry">다시 꾸미기</button>
+              <button class="btn-makeup btn-save">저장하기</button>
+            </div>
+          </div>
+          <!-- //#꾸미기 영역: 버튼  -->
+        </div>
+
+      </section>
+      <!-- //##꾸미기 영역 -->
+
+      <!-- ##선택 영역 -->
+      <section class="section-select">
+        <h2 class="blind">선택 영역</h2>
+        <div class="section-select-wrap">
+          <!-- 210913 fixed-box 추가 -->
+          <div class="select-tab-box parent-box fixed-box">
+            <!-- #탭 버튼 -->
+            <div class="sort-btn-area">
+              <!-- js act: 탭 메뉴 활성화  / no-sub: 서브 메뉴 없는 경우 -->
+              <button class="btn btn-main btn-tab act" data-depth="0" data-idx="0">
+                <!-- 211124 아이콘 이미지 태그 추가 -->
+                <img src="./assets/images/makeup/i-character-off@2x.png" alt="대분류아이콘" class="img-off" width="24" height="24">
+                <img src="./assets/images/makeup/i-character-on@2x.png" alt="대분류아이콘" class="img-on" width="24" height="24">
+                <!-- 211124 t-character 클래스명 삭제 -->
+                <span class="t-sort">캐릭터</span>
+              </button>
+              <button class="btn btn-main btn-tab" data-depth="0" data-idx="1">
+                <!-- 211124 아이콘 이미지 태그 추가 -->
+                <img src="./assets/images/makeup/i-emotion-off@2x.png" alt="대분류아이콘" class="img-off" width="24" height="24">
+                <img src="./assets/images/makeup/i-emotion-on@2x.png" alt="대분류아이콘" class="img-on" width="24" height="24">
+                <!-- 211124 t-emotion 클래스명 삭제 -->
+                <span class="t-sort">감정</span>
+              </button>
+              <button class="btn btn-main btn-tab no-sub" data-depth="0" data-idx="2">
+                <!-- 211124 아이콘 이미지 태그 추가 -->
+                <img src="./assets/images/makeup/i-chum-off@2x.png" alt="대분류아이콘" class="img-off" width="24" height="24">
+                <img src="./assets/images/makeup/i-chum-on@2x.png" alt="대분류아이콘" class="img-on" width="24" height="24">
+                <!-- 211124 t-chum 클래스명 삭제 -->
+                <span class="t-sort">단짝</span>
+              </button>
+              <button class="btn btn-main btn-tab" data-depth="0" data-idx="3">
+                <!-- 211124 아이콘 이미지 태그 추가 -->
+                <img src="./assets/images/makeup/i-background-off@2x.png" alt="대분류아이콘" class="img-off" width="24" height="24">
+                <img src="./assets/images/makeup/i-background-on@2x.png" alt="대분류아이콘" class="img-on" width="24" height="24">
+                <!-- 211124 t-background 클래스명 삭제 -->
+                <span class="t-sort">배경</span>
+              </button>
+            </div>
+
+            <!-- #탭 컨텐츠: 캐릭터  -->
+            <!-- js act: 탭 컨텐츠 활성화 -->
+            <section class="content-area con1 act" data-depth="0" data-idx="0">
+              <h3 class="blind">캐릭터</h3>
+              <div class="btn-sub-area parent-box">
+                <div class="btn-sub-area-wrap">
+                    <!-- js act: 서브 탭 메뉴 활성화 -->
+                    <button class="btn-sub btn-tab " data-depth="1" data-idx="0">
+                      <span class="t-sort">얼굴</span>
+                    </button>
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="1">
+                      <span class="t-sort">피부톤</span>
+                    </button>
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="2">
+                      <span class="t-sort">헤어스타일</span>
+                    </button>
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="3">
+                      <span class="t-sort">상의</span>
+                    </button>
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="4">
+                      <span class="t-sort">하의</span>
+                    </button>
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="5">
+                      <span class="t-sort">한벌 의상</span>
+                    </button>
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="6">
+                      <span class="t-sort">신발</span>
+                    </button>
+
+                </div>
+              </div>
+            </section>
+            <!-- //#탭 컨텐츠: 캐릭터  -->
+
+            <!-- #탭 컨텐츠: 감정  -->
+            <section class="content-area con2" data-depth="0" data-idx="1">
+              <h3 class="blind">감정</h3>
+              <div class="btn-sub-area parent-box">
+                <div class="btn-sub-area-wrap">
+
+                    <!-- js act: 서브 탭 메뉴 활성화 -->
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+                    <button class="btn-sub btn-tab" data-depth="1" data-idx="0">
+                      <span class="t-sort">감정</span>
+                    </button>
+
+
+                </div>
+              </div>
+            </section>
+            <!-- //#탭 컨텐츠: 감정  -->
+
+            <!-- #탭 컨텐츠: 단짝  -->
+            <section class="content-area con3" data-depth="0" data-idx="2">
+              <h3 class="blind">단짝</h3>
+              <div class="btn-sub-area parent-box" style="display: none">
+                <div class="btn-sub-area-wrap">
+
+
+                    <!-- js act: 서브 탭 메뉴 활성화 -->
+                    <button class="btn-sub btn-tab " data-depth="1" data-idx="0">
+                      <span class="t-sort">단짝</span>
+                    </button>
+
+                </div>
+              </div>
+            </section>
+            <!-- //#탭 컨텐츠: 단짝  -->
+
+            <!-- #탭 컨텐츠: 배경  -->
+            <section class="content-area con4" data-depth="0" data-idx="3">
+              <h3 class="blind">배경</h3>
+              <div class="btn-sub-area parent-box">
+                <div class="btn-sub-area-wrap">
+
+
+                    <!-- js act: 서브 탭 메뉴 활성화 -->
+                    <button class="btn-sub btn-tab " data-depth="1" data-idx="0">
+                      <span class="t-sort">배경</span>
+                    </button>
+
+                    <!-- js act: 서브 탭 메뉴 활성화 -->
+                    <button class="btn-sub btn-tab " data-depth="1" data-idx="0">
+                      <span class="t-sort">배경</span>
+                    </button>
+
+                    <!-- js act: 서브 탭 메뉴 활성화 -->
+                    <button class="btn-sub btn-tab " data-depth="1" data-idx="0">
+                      <span class="t-sort">배경</span>
+                    </button>
+
+                    <!-- js act: 서브 탭 메뉴 활성화 -->
+                    <button class="btn-sub btn-tab " data-depth="1" data-idx="0">
+                      <span class="t-sort">배경</span>
+                    </button>
+
+                    <!-- js act: 서브 탭 메뉴 활성화 -->
+                    <button class="btn-sub btn-tab " data-depth="1" data-idx="0">
+                      <span class="t-sort">배경</span>
+                    </button>
+
+
+                </div>
+              </div>
+            </section>
+            <!-- //#탭 컨텐츠: 배경  -->
+          </div>
+
+          <div class="select-content-box">
+            <div class="select-content-box-wrap">
+              <!-- 드롭박스 -->
+              <div class="unit-dropdown-box">
+                <select class="dropdown">
+                  <option value="1">전체</option>
+                  <option value="2">최신순</option>
+                  <option value="3">인기순</option>
+                  <option value="4">구매완료 순</option>
+                  <option value="5">최대가격순</option>
+                  <option value="6">최소가격순</option>
+                </select>
+              </div>
+              <!-- 아이템 리스트 -->
+              <!-- 아이템 리스트 -->
+              <div class="unit-list-box">
+                <ul class="item-select-list-grp">
+                  <!-- js on: 리스트 선택 활성화  -->
+                  <li class="item-select-list on">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">건빵 칠부 바지 건빵 칠부 바지</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">노란 숏 팬츠</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-shoes-1.png" alt="신발" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">건빵 칠부 바지 건빵 칠부 바지</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">노란 숏 팬츠</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-shoes-1.png" alt="신발" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">건빵 칠부 바지 건빵 칠부 바지</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">노란 숏 팬츠</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-shoes-1.png" alt="신발" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">건빵 칠부 바지 건빵 칠부 바지</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">노란 숏 팬츠</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-shoes-1.png" alt="신발" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">건빵 칠부 바지 건빵 칠부 바지</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">노란 숏 팬츠</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-shoes-1.png" alt="신발" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">건빵 칠부 바지 건빵 칠부 바지</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">노란 숏 팬츠</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-shoes-1.png" alt="신발" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/bg-1-1.png" alt="배경" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">건빵 칠부 바지 건빵 칠부 바지</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">100콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="icon-item">
+                      <i class="ico i-select-new">NEW</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-top-1.png" alt="상의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">노란 숏 팬츠</span>
+                    </div>
+                    <div class="price-item">
+                      <i class="ico i-cone">콘</i>
+                      <span class="t-num">10000콘</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list on">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-shoes-1.png" alt="신발" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                  <li class="item-select-list">
+                    <div class="badge-item">
+                      <i class="ico i-select-badge">구매</i>
+                    </div>
+                    <div class="img-item">
+                      <img src="./assets/images/item/thumnail/character-bottom-1.png" alt="하의" width="100" height="100" class="img-thumnail">
+                    </div>
+                    <div class="txt-item">
+                      <span class="txt">갈색 긴팔 셔츠형 자켓</span>
+                    </div>
+                    <div class="price-item">
+                      <span class="t-free">FREE</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //##선택 영역 -->
+    </main>
+    <!-- //###컨텐츠 -->
+  </div>
+  <!-- //####홈바타 -->
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+// ========================================================================
+// [content] |  컨텐츠
+// ========================================================================
+.homevatar{
+  .contents-box{
+    position: relative;
+    top: 70px;
+    height: calc(100% - 71px);
+    // 아이템 뎁스 (리스트/꾸미기 영역)
+    .img-makeup-item{
+      $total: 50;
+      @for $i from 0 through $total {
+        .depth#{$i}{
+          z-index: $i;
+        }
+      }
+      // &.depth1{
+      //   z-index: 1
+      //}
+    }
+  }
+  .section-character-list{
+    .character-txt{
+      padding-top: 57px;
+      margin-left: 40px;
+      font-size: 0;
+      span, em{
+        color: #666666;
+        font-size: 20px;
+        font-weight: $base-bold;
+        vertical-align: baseline;
+      }
+      .t-highlight{
+        margin-left: 5px;
+        color: #ff6400;
+      }
+    }
+    //-----------------------------------------------------------------------
+    .character-slider-inner{
+      margin-top: 40px;
+    }
+    .add-area-wrap{
+      position: relative;
+      display: inline-block;
+      width: 170px;
+      height: 380px;
+      border-radius: 50px;
+      border: 2px dashed #c9b5f6;
+      background-color: #fbf9ff;
+      box-sizing: border-box;
+      .btn-add{
+        width: 100%;
+        height: 100%;
+        @extend %ir;
+        &::before{
+          @include top-left(50%, 50%);
+          @include bg-img-size(80px/2, 80px/2, $imglistPath, 'i-add@2x');
+          margin-top: -20px;
+          margin-left: -20px;
+          content: "";
+        }
+      }
+    }
+    .makeup-area{
+      position: relative;
+      &.select{
+        .makeup-area-wrap{
+          border: 4px solid #7146d3;
+        }
+        .check-makeup{
+          @include top-left(0, 0);
+          display: block;
+        }
+      }
+      &.lead{
+        .badge-makeup{
+          @include top-right(15px, 10px);
+          display: block;
+        }
+      }
+      .check-makeup,
+      .badge-makeup{
+        display: none
+      }
+    }
+    .makeup-area-wrap{
+      position: relative;
+      display: inline-block;
+      width: 350px;
+      height: 380px;
+      border-radius: 54px;
+      border: 4px solid #fff;
+      background-color: #dcfdfa;
+      box-sizing: border-box;
+      overflow: hidden;
+      cursor: pointer;
+      .img-makeup-item{
+        @include top-left(-4px, -4px);
+        width: 350px;
+        height: 380px;
+      }
+    }
+    //-----------------------------------------------------------------------
+    .character-btn-inner{
+      @include bottom-left(73px, 0);
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .character-btn{
+      display: inline-block;
+    }
+    .character-btn-list-grp{
+      font-size: 0;
+    }
+    .character-btn-list{
+      position: relative;
+      display: inline-block;
+      &.list-edit{
+        margin-left: 16px;
+        padding-left: 16px;
+        &::before{
+          @include top-left(50%, 0);
+          display: block;
+          width: 1px;
+          height: 30px;
+          margin-top: -15px;
+          background-color: #cccccc;
+          content: "";
+        }
+      }
+    }
+    .btn-set{
+      position: relative;
+      height: 50px;
+      line-height: 46px;
+      padding: 0 20px 0 40px;
+      margin: 0 5px;
+      border-radius: 25px;
+      border: 2px solid #d1bdff;
+      font-size: 21px;
+      font-weight: $base-extrabold;
+      color: #7146d3;
+      &::before{
+        content: "";
+      }
+      &.btn-set-lead{
+        &::before{
+          @include top-left(50%, 10px);
+          @include bg-img-size(38px/2, 30px/2, $imglistPath, 'i-btn-check@2x');
+          margin-top: -7px;
+        }
+      }
+      &.btn-set-save{
+        &::before{
+          @include top-left(50%, 12px);
+          @include bg-img-size(38px/2, 40px/2, $imglistPath, 'i-btn-save@2x');
+          margin-top: -10px;
+        }
+      }
+      &.btn-set-edit{
+        &::before{
+          @include top-left(50%, 12px);
+          @include bg-img-size(42px/2, 46px/2, $imglistPath, 'i-btn-edit@2x');
+          margin-top: -11px;
+        }
+      }
+      &.btn-set-delete{
+        &::before{
+          @include top-left(50%, 13px);
+          @include bg-img-size(34px/2, 44px/2, $imglistPath, 'i-btn-delete@2x');
+          margin-top: -11px;
+        }
+      }
+    }
+  }
+
+  // 리스트 슬라이더
+  .character-slider-inner{
+    .swiper {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-wrapper{
+      &.mode-center{
+        justify-content: center;
+      }
+    }
+    .swiper-slide{
+      width: auto;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

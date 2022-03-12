@@ -1,0 +1,31 @@
+// ========================================================================
+// [header] | 헤더
+// ========================================================================
+.homevatar {
+  .top-box{
+    position: absolute;
+    // position: fixed;
+    top: 0;
+    width: 100%;
+    // height: 58px;
+    height: 71px;
+    background-color: #46525b;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  // 상단 로고
+  .top-logo{
+    @include top-left(8px, 24px);
+  }
+  // 상단 학습안내
+  .top-tutorial {
+    @include top-right(18px, 74px);
+  }
+  // 상단 닫기 버튼
+  .top-close{
+    @include top-right(2px, 3px);
+    button{
+      padding: 18px;
+    }
+  }
+}
